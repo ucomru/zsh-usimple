@@ -12,7 +12,7 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 venv_prompt_info() {
   [ -v VIRTUAL_ENV ] && \
-  echo "%{$fg[cyan]%}${VIRTUAL_ENV:t}%{$reset_color%}%{$fg[blue]%}§%{$reset_color%}"
+  echo "%{$fg[cyan]%}${VIRTUAL_ENV:h:t}%{$reset_color%}%{$fg[blue]%}§%{$reset_color%}"
 }
 
 PROMPT='
